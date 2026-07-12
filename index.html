@@ -149,8 +149,16 @@ main{
 
 /* ── PROJECTS ── */
 .pj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
-.pj{background:rgba(8,8,10,0.65);border:1px solid rgba(0,255,159,0.1);padding:1.3rem;display:flex;flex-direction:column;gap:0.85rem;position:relative;overflow:hidden;transition:transform 0.3s,border-color 0.3s}
-.pj:hover{transform:translateY(-4px);border-color:var(--green)}
+.pj{
+  background:rgba(8,8,10,0.82);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  border:1px solid rgba(0,255,159,0.1);
+  padding:1.3rem;
+  display:flex;flex-direction:column;gap:0.85rem;
+  position:relative;overflow:hidden;
+  transition:transform 0.3s,border-color 0.3s;
+}.pj:hover{transform:translateY(-4px);border-color:var(--green)}
 .pj-glow{position:absolute;top:0;left:0;right:0;height:1px;background:var(--green);opacity:0;transition:opacity 0.3s}
 .pj:hover .pj-glow{opacity:1}
 .pj.feat{grid-column:span 2;border-color:rgba(0,255,159,0.22)}
@@ -160,6 +168,8 @@ main{
 .pj-desc{font-size:0.83rem;color:#777;line-height:1.7;font-weight:300;flex:1}
 .pj-tags{display:flex;flex-wrap:wrap;gap:5px}
 .pt{font-family:'Share Tech Mono',monospace;font-size:0.6rem;padding:2px 8px;border:1px solid #222;color:#555}
+.pj-name a{color:inherit;text-decoration:none;border-bottom:1px dashed rgba(0,255,159,0.4);transition:color 0.2s,border-color 0.2s}
+.pj-name a:hover{color:var(--green);border-color:var(--green)}
 
 /* ── EXPERIENCE ── */
 .exp-list{display:flex;flex-direction:column}
@@ -492,7 +502,7 @@ footer{
   </div>
 
   <div class="hero-stats">
-    <div class="stat-box"><div class="sn">1+</div><div class="sl">yearr on-site</div></div>
+    <div class="stat-box"><div class="sn">1+</div><div class="sl">year on-site</div></div>
     <div class="stat-box"><div class="sn">8+</div><div class="sl">projects</div></div>
     <div class="stat-box"><div class="sn">16+</div><div class="sl">technologies</div></div>
     <div class="stat-box"><div class="sn">2025</div><div class="sl">CS graduate</div></div>
@@ -516,7 +526,7 @@ footer{
       <div class="ir"><div class="ik">STATUS</div><div class="iv" style="color:var(--green)">● Employed + Open</div></div>
       <div class="ir"><div class="ik">LOCATION</div><div class="iv">Rawalpindi, Pakistan</div></div>
       <div class="ir"><div class="ik">DEGREE</div><div class="iv">B.S. Computer Science 2025</div></div>
-      <div class="ir"><div class="ik">FOCUS</div><div class="iv">Full Stack · .NET · React</div></div>
+      <div class="ir"><div class="ik">FOCUS</div><div class="iv">Full Stack · Python · React</div></div>
       <div class="ir"><div class="ik">EMAIL</div><div class="iv" style="color:var(--cyan)">aimenk240@gmail.com</div></div>
     </div>
   </div>
@@ -601,6 +611,34 @@ footer{
       <div class="pj-name">ATM &amp; Bank Management</div>
       <div class="pj-desc">SQL-backed ATM system and a Java console bank management app demonstrating core OOP and data structures.</div>
       <div class="pj-tags"><span class="pt">Java</span><span class="pt">SQL</span><span class="pt">OOP</span></div>
+    </div>
+    <div class="pj">
+      <div class="pj-glow"></div>
+      <div class="pj-num">PROJECT_07 // WORDPRESS</div>
+      <div class="pj-name"><a href="https://www.pmahealthcare.com" target="_blank" rel="noopener noreferrer">PMA Healthcare</a></div>
+      <div class="pj-desc">Corporate healthcare website built on WordPress with CMS-driven content, responsive layouts, and a clean, accessible design system.</div>
+      <div class="pj-tags"><span class="pt">WordPress</span><span class="pt">CSS</span><span class="pt">Responsive</span></div>
+    </div>
+    <div class="pj">
+      <div class="pj-glow"></div>
+      <div class="pj-num">PROJECT_08 // WORDPRESS</div>
+      <div class="pj-name"><a href="https://www.infinityhealthpk.com" target="_blank" rel="noopener noreferrer">Infinity Health PK</a></div>
+      <div class="pj-desc">Healthcare-sector WordPress site with custom theming, structured page templates, and mobile-first responsive design.</div>
+      <div class="pj-tags"><span class="pt">WordPress</span><span class="pt">CMS</span><span class="pt">Responsive</span></div>
+    </div>
+    <div class="pj">
+      <div class="pj-glow"></div>
+      <div class="pj-num">PROJECT_09 // WORDPRESS</div>
+      <div class="pj-name"><a href="https://www.azizwelfaretrustpk.com" target="_blank" rel="noopener noreferrer">Aziz Welfare Trust</a></div>
+      <div class="pj-desc">Website for a charitable welfare trust, including the AWT Blood Bank initiative — built to communicate the organisation's programs and drive donor engagement, with supporting promotional design work.</div>
+      <div class="pj-tags"><span class="pt">WordPress</span><span class="pt">CMS</span><span class="pt">Design</span></div>
+    </div>
+    <div class="pj">
+      <div class="pj-glow"></div>
+      <div class="pj-num">PROJECT_10 // CODEIGNITER</div>
+      <div class="pj-name">CRM System</div>
+      <div class="pj-desc">Customer relationship management system built with PHP CodeIgniter — build to organize home sampling where main lab enters booking of each patients and transfer it to one of its franchises keeping the track of status changing till report uploading.</div>
+      <div class="pj-tags"><span class="pt">CodeIgniter</span><span class="pt">PHP</span><span class="pt">PhpAdmin</span></div>
     </div>
   </div>
 </section>
